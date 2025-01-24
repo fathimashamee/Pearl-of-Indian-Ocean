@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(images/frontpage4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img{
+    width: 150px;
+  }
+  
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #36a8f4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover:after{
+    width: 100%;
+  }
+  
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+    
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .hero-btn:hover{
+    border: 1px solid #36a8f4;
+    background: #36a8f4;
+    transition: 1s;
+  }
+  
+  .information{
+    display: inline-block;
+    padding: 10px;
+    align-items:center;
+  }
+  
+  .card1 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card-image{
+    grid-area: image;
+  }
+  .card-text {
+    grid-area: text;
+  }
+  .card-stats {
+    grid-area: stats; 
+  }
+  .card-image1{
+    grid-area: image;
+    background: url("Images/Dambulla-Cave-Temple.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  
+  .card-text p {
+    color: rgb(250, 250, 250);
+    font-size:15px;
+    font-weight: 300;
+  }
+  
+  
+  .card2 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -360px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+  }
+  .card-image2{
+    grid-area: image;
+    background: url("Images/Arugam-Bay.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .card3 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -360px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .card-image3{
+    grid-area: image;
+    background: url("Images/yala\ national\ park.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .card4 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -360px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  .card-image4{
+    grid-area: image;
+    background: url("Images/front.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .card5 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card-image5{
+    grid-area: image;
+    background: url("Images/lotus.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card6 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -360px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    
+  }
+  .card-image6{
+    grid-area: image;
+    background: url("Images/bridge.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .card7 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -360px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  .card-image7{
+    grid-area: image;
+    background: url("Images/Temple-Of-the-tooth-image-3.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .card8 {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    width: 250px;
+    height: 440px;
+    background: rgb(174, 180, 112);
+    font-family: roboto;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -360px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  .card-image8{
+    grid-area: image;
+    background: url("Images/sirgirya-rock.jpg");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .card-image1,.card-image2, .card-image3, .card-image4, .card-image5, .card-image6, .card-image7, .card-image8{
+    transition: all 1s;
+  }
+
+  .card-image1:hover,.card-image2:hover, .card-image3:hover, .card-image4:hover, .card-image5:hover, .card-image6:hover, .card-image7:hover, .card-image8:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  body{
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+  }
+  *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+  }
+  .container{
+      max-width: 1170px;
+      margin:auto;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  ul{
+      list-style: none;
+  }
+  .footer{
+      background-color: #24262b;
+      padding: 70px 0;
+      border-top-left-radius: 125px;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      background-color: #4263a1;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+
+
+
+
+
+
+

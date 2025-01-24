@@ -1,0 +1,31 @@
+/*----western----*/
+.place{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+  flex-basis: center;
+  align-items: center;
+}
+
+.place1 img{
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    margin-right: 50%;
+  }
+  
+.place1 h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center;
+  }
+.place1 p{
+    color: #999;
+    padding: 0;
+    text-align: center;
+  }
+  
+
+ 
+    
